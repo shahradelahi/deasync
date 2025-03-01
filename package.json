@@ -1,0 +1,65 @@
+{
+  "name": "@se-oss/deasync",
+  "version": "0.0.0",
+  "description": "Native Node.js addon for synchronous async calls.",
+  "keywords": [
+    "deasync",
+    "async",
+    "synchronous",
+    "addon",
+    "blocking",
+    "callbacks",
+    "nodejs"
+  ],
+  "homepage": "https://github.com/shahradelahi/deasync",
+  "repository": "github:shahradelahi/deasync",
+  "license": "MIT",
+  "author": "Shahrad Elahi <shahrad@litehex.com> (https://github.com/shahradelahi)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "artifacts": "napi artifacts",
+    "bindings": "pnpm bindings:debug --release",
+    "bindings:debug": "napi build --platform --dts bindings.d.ts --js bindings.js",
+    "build": "pnpm bindings && tsup",
+    "format": "prettier --write . --ignore-path .gitignore",
+    "format:check": "prettier --check . --ignore-path .gitignore",
+    "prepublishOnly": "napi prepublish -t npm",
+    "test": "vitest --run",
+    "universal": "napi universal",
+    "version": "napi version"
+  },
+  "prettier": "@shahrad/prettier-config",
+  "dependencies": {
+    "type-fest": "^4.36.0"
+  },
+  "devDependencies": {
+    "@napi-rs/cli": "^2.18.4",
+    "@shahrad/prettier-config": "^1.2.1",
+    "@sindresorhus/tsconfig": "^7.0.0",
+    "@types/node": "^22.13.8",
+    "prettier": "^3.5.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
+  },
+  "packageManager": "pnpm@9.15.6",
+  "engines": {
+    "node": ">= 10"
+  },
+  "napi": {
+    "name": "deasync",
+    "triples": {
+      "additional": [
+        "aarch64-apple-darwin",
+        "aarch64-unknown-linux-gnu",
+        "aarch64-unknown-linux-musl",
+        "aarch64-pc-windows-msvc",
+        "x86_64-unknown-linux-musl"
+      ]
+    }
+  }
+}

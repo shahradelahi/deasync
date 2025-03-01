@@ -1,0 +1,21 @@
+{
+  "name": "@se-oss/deasync-linux-arm64-gnu",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "deasync.linux-arm64-gnu.node",
+  "files": [
+    "deasync.linux-arm64-gnu.node"
+  ],
+  "engines": {
+    "node": ">= 10"
+  },
+  "os": [
+    "linux"
+  ],
+  "cpu": [
+    "arm64"
+  ],
+  "libc": [
+    "glibc"
+  ]
+}
