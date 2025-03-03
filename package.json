@@ -24,7 +24,7 @@
     "artifacts": "napi artifacts",
     "bindings": "pnpm bindings:debug --release",
     "bindings:debug": "napi build --platform --dts bindings.d.ts --js bindings.js",
-    "build": "pnpm bindings && tsup",
+    "build": "tsup",
     "format": "prettier --write . --ignore-path .gitignore",
     "format:check": "prettier --check . --ignore-path .gitignore",
     "prepublishOnly": "napi prepublish -t npm",
@@ -49,6 +49,11 @@
   "packageManager": "pnpm@9.15.6",
   "engines": {
     "node": ">= 10"
+  },
+  "pnpm": {
+    "overrides": {
+      "rollup": "npm:@rollup/wasm-node"
+    }
   },
   "napi": {
     "name": "deasync",
