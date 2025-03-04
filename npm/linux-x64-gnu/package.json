@@ -1,21 +1,29 @@
 {
   "name": "@se-oss/deasync-linux-x64-gnu",
   "version": "0.0.0",
-  "license": "MIT",
-  "main": "deasync.linux-x64-gnu.node",
-  "files": [
-    "deasync.linux-x64-gnu.node"
-  ],
-  "engines": {
-    "node": ">= 10"
-  },
   "os": [
     "linux"
   ],
   "cpu": [
     "x64"
   ],
+  "main": "deasync.linux-x64-gnu.node",
+  "files": [
+    "deasync.linux-x64-gnu.node"
+  ],
+  "homepage": "https://github.com/shahradelahi/deasync",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahradelahi/deasync.git"
+  },
   "libc": [
     "glibc"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }

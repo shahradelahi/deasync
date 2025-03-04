@@ -27,7 +27,7 @@
     "build": "tsup",
     "format": "prettier --write . --ignore-path .gitignore",
     "format:check": "prettier --check . --ignore-path .gitignore",
-    "prepublishOnly": "napi prepublish -t npm",
+    "prepublishOnly": "napi prepublish -t npm --skip-gh-release",
     "test": "vitest --run",
     "universal": "napi universal",
     "version": "napi version"
@@ -49,6 +49,9 @@
   "packageManager": "pnpm@9.15.6",
   "engines": {
     "node": ">= 10"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "pnpm": {
     "overrides": {

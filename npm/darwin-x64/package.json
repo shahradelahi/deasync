@@ -1,18 +1,27 @@
 {
   "name": "@se-oss/deasync-darwin-x64",
   "version": "0.0.0",
-  "license": "MIT",
-  "main": "deasync.darwin-x64.node",
-  "files": [
-    "deasync.darwin-x64.node"
-  ],
-  "engines": {
-    "node": ">= 10"
-  },
   "os": [
     "darwin"
   ],
   "cpu": [
     "x64"
-  ]
+  ],
+  "main": "deasync.darwin-x64.node",
+  "files": [
+    "deasync.darwin-x64.node"
+  ],
+  "author": "Shahrad Elahi <shahrad@litehex.com> (https://github.com/shahradelahi)",
+  "homepage": "https://github.com/shahradelahi/deasync",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahradelahi/deasync.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
 }

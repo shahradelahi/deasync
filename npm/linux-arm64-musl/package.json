@@ -1,21 +1,29 @@
 {
   "name": "@se-oss/deasync-linux-arm64-musl",
   "version": "0.0.0",
-  "license": "MIT",
-  "main": "deasync.linux-arm64-musl.node",
-  "files": [
-    "deasync.linux-arm64-musl.node"
-  ],
-  "engines": {
-    "node": ">= 10"
-  },
   "os": [
     "linux"
   ],
   "cpu": [
     "arm64"
   ],
+  "main": "deasync.linux-arm64-musl.node",
+  "files": [
+    "deasync.linux-arm64-musl.node"
+  ],
+  "homepage": "https://github.com/shahradelahi/deasync",
+  "license": "MIT",
+  "engines": {
+    "node": ">= 10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahradelahi/deasync.git"
+  },
   "libc": [
     "musl"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
