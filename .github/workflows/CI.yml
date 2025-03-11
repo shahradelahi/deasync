@@ -358,6 +358,9 @@ jobs:
       - name: Move artifacts
         run: pnpm artifacts
 
+      - name: Build
+        run: pnpm build
+
       - name: List packages
         run: ls -R ./npm
         shell: bash
