@@ -34,19 +34,29 @@
   },
   "prettier": "@shahrad/prettier-config",
   "dependencies": {
-    "type-fest": "^4.36.0"
+    "type-fest": "^4.37.0"
   },
   "devDependencies": {
     "@napi-rs/cli": "^2.18.4",
     "@shahrad/prettier-config": "^1.2.1",
     "@sindresorhus/tsconfig": "^7.0.0",
-    "@types/node": "^22.13.8",
-    "prettier": "^3.5.2",
+    "@types/node": "^22.13.10",
+    "prettier": "^3.5.3",
     "tsup": "^8.4.0",
     "typescript": "^5.8.2",
-    "vitest": "^3.0.7"
+    "vitest": "^3.0.8"
   },
-  "packageManager": "pnpm@9.15.6",
+  "optionalDependencies": {
+    "@se-oss/deasync-darwin-arm64": "1.0.0",
+    "@se-oss/deasync-darwin-x64": "1.0.0",
+    "@se-oss/deasync-linux-arm64-gnu": "1.0.0",
+    "@se-oss/deasync-linux-arm64-musl": "1.0.0",
+    "@se-oss/deasync-linux-x64-gnu": "1.0.0",
+    "@se-oss/deasync-linux-x64-musl": "1.0.0",
+    "@se-oss/deasync-win32-arm64-msvc": "1.0.0",
+    "@se-oss/deasync-win32-x64-msvc": "1.0.0"
+  },
+  "packageManager": "pnpm@9.15.9",
   "engines": {
     "node": ">= 10"
   },
@@ -69,15 +79,5 @@
         "x86_64-unknown-linux-musl"
       ]
     }
-  },
-  "optionalDependencies": {
-    "@se-oss/deasync-win32-x64-msvc": "1.0.0",
-    "@se-oss/deasync-darwin-x64": "1.0.0",
-    "@se-oss/deasync-linux-x64-gnu": "1.0.0",
-    "@se-oss/deasync-darwin-arm64": "1.0.0",
-    "@se-oss/deasync-linux-arm64-gnu": "1.0.0",
-    "@se-oss/deasync-linux-arm64-musl": "1.0.0",
-    "@se-oss/deasync-win32-arm64-msvc": "1.0.0",
-    "@se-oss/deasync-linux-x64-musl": "1.0.0"
   }
 }
