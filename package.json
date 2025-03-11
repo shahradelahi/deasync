@@ -1,6 +1,6 @@
 {
   "name": "@se-oss/deasync",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Native Node.js addon for synchronous async calls.",
   "keywords": [
     "deasync",
