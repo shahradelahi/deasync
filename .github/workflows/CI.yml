@@ -359,7 +359,7 @@ jobs:
         run: pnpm artifacts
 
       - name: Build
-        run: pnpm build
+        run: pnpm bindings && pnpm build
 
       - name: List packages
         run: ls -R ./npm
