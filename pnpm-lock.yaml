@@ -14,31 +14,6 @@ importers:
       type-fest:
         specifier: ^4.37.0
         version: 4.37.0
-    optionalDependencies:
-      '@se-oss/deasync-darwin-arm64':
-        specifier: 1.0.0
-        version: 1.0.0
-      '@se-oss/deasync-darwin-x64':
-        specifier: 1.0.0
-        version: 1.0.0
-      '@se-oss/deasync-linux-arm64-gnu':
-        specifier: 1.0.0
-        version: 1.0.0
-      '@se-oss/deasync-linux-arm64-musl':
-        specifier: 1.0.0
-        version: 1.0.0
-      '@se-oss/deasync-linux-x64-gnu':
-        specifier: 1.0.0
-        version: 1.0.0
-      '@se-oss/deasync-linux-x64-musl':
-        specifier: 1.0.0
-        version: 1.0.0
-      '@se-oss/deasync-win32-arm64-msvc':
-        specifier: 1.0.0
-        version: 1.0.0
-      '@se-oss/deasync-win32-x64-msvc':
-        specifier: 1.0.0
-        version: 1.0.0
     devDependencies:
       '@napi-rs/cli':
         specifier: ^2.18.4
@@ -64,6 +39,31 @@ importers:
       vitest:
         specifier: ^3.0.8
         version: 3.0.8(@types/node@22.13.10)
+    optionalDependencies:
+      '@se-oss/deasync-darwin-arm64':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@se-oss/deasync-darwin-x64':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@se-oss/deasync-linux-arm64-gnu':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@se-oss/deasync-linux-arm64-musl':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@se-oss/deasync-linux-x64-gnu':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@se-oss/deasync-linux-x64-musl':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@se-oss/deasync-win32-arm64-msvc':
+        specifier: 1.0.0
+        version: 1.0.0
+      '@se-oss/deasync-win32-x64-msvc':
+        specifier: 1.0.0
+        version: 1.0.0
 
   packages/bindings:
     devDependencies:
