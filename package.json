@@ -48,7 +48,7 @@
   },
   "optionalDependencies": {
     "@se-oss/deasync-darwin-arm64": "1.0.0",
-    "@se-oss/deasync-darwin-x64": "1.0.0",
+    "@se-oss/deasync-darwin-x64": "1.0.1",
     "@se-oss/deasync-linux-arm64-gnu": "1.0.0",
     "@se-oss/deasync-linux-arm64-musl": "1.0.0",
     "@se-oss/deasync-linux-x64-gnu": "1.0.0",
