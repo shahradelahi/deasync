@@ -44,7 +44,7 @@
     "prettier": "^3.5.3",
     "tsup": "^8.4.0",
     "typescript": "^5.8.2",
-    "vitest": "^3.0.8"
+    "vitest": "^4.0.0"
   },
   "optionalDependencies": {
     "@se-oss/deasync-darwin-arm64": "1.0.0",
